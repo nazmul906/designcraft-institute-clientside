@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 lg:w-1/4 mb-4 md:mb-0">
-            <h3 className="text-lg font-bold mb-2">Foreign Language School</h3>
+            <h3 className="text-lg font-bold mb-2">DesignCraft Institute</h3>
             <p className="text-sm">Grred Road, Dhaka</p>
             <p className="text-sm">Bangladesh</p>
           </div>

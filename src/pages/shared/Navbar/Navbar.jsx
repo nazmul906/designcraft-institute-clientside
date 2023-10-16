@@ -163,7 +163,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="text-white text-2xl">
-          Foreign Language School
+          DesignCraft Institute
         </Link>
         {/* <h1 className="text-white text-2xl">Foreign Language School</h1> */}
       </div>
