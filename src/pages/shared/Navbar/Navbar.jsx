@@ -110,11 +110,10 @@
 
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import { AuthContext } from "../../../providers/AuthProvider";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navbar = () => {
-  // const { user, logout } = useContext(AuthContext);
-  const user = "nazmul";
+  const { user, logout } = useContext(AuthContext);
 
   const handleLogout = () => {
     logout()
@@ -165,6 +164,7 @@ const Navbar = () => {
         <Link to="/" className="text-white text-2xl">
           DesignCraft Institute
         </Link>
+        <p className="font-serif">Online Courses for Creatives</p>
         {/* <h1 className="text-white text-2xl">Foreign Language School</h1> */}
       </div>
       <div className="navbar-center hidden lg:flex">

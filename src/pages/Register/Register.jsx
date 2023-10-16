@@ -70,79 +70,88 @@ const Register = () => {
       .then((error) => console.log(error.message));
   };
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="max-w-md w-full mx-auto">
-        <div className="bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold mb-6">Register</h2>
-          <form onSubmit={handleRegister}>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
-                Name
-              </label>
-              <input
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-                name="name"
-                type="text"
-                placeholder="Enter your name"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
-                Email
-              </label>
-              <input
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-                name="email"
-                type="email"
-                placeholder="Enter your email"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
-                password
-              </label>
-              <input
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-                name="password"
-                type="password"
-                placeholder="Enter your password"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
-                Confirm Password
-              </label>
-              <input
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-                name="confirmpassword"
-                type="password"
-                placeholder="Enter your password gain"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2">
-                PhotoUrl
-              </label>
-              <input
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-                name="photo"
-                type="text"
-                placeholder=""
-              />
-            </div>
+    <div className=" flex justify-center items-center h-screen ">
+      <div className="w-full max-w-md">
+        <form
+          onSubmit={handleRegister}
+          className="bg-white shadow-md rounded px-8 py-6"
+        >
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Name
+            </label>
+            <input
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Email
+            </label>
+            <input
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Password
+            </label>
+            <input
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              name="password"
+              type="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Confirm Password
+            </label>
+            <input
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+              name="confirmpassword"
+              type="password"
+              placeholder="Enter your password gain"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Photo
+            </label>
+            <input
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              name="photo"
+              type="text"
+              placeholder="your photo"
+              required
+            />
+          </div>
 
-            <div className=" mt-6">
-              <input
-                // disabled={disable}
-                disabled={false}
-                type="submit"
-                value="Sign Up"
-                className="btn btn-primary"
-              ></input>
-            </div>
-
-            <p className="text-red-800">{error}</p>
-          </form>
+          <div className="flex items-center justify-between">
+            {/* <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+            >
+              Sign In
+            </button> */}
+            <input
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              type="submit"
+              value="submit"
+            />
+          </div>
+        </form>
+        <div>
+          <p className="">{error}</p>
         </div>
       </div>
     </div>
