@@ -9,14 +9,7 @@ import OverallCountdown from "../OverallCountdown/OverallCountdown";
 const Home = () => {
   return (
     <div>
-      {/* <h4>this is home</h4> */}
-      {/* <Slider></Slider> */}
       <Banner></Banner>
-      <PopularClass></PopularClass>
-      <PopularInstructor></PopularInstructor>
-      <LatestNews></LatestNews>
-      <NewEvent></NewEvent>
-      <OverallCountdown></OverallCountdown>
     </div>
   );
 };
