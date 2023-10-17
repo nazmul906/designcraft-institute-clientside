@@ -180,7 +180,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/class" className="text-white">
+            <NavLink to="/approvedclass" className="text-white">
               Classes
             </NavLink>
           </li>

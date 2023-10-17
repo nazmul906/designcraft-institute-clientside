@@ -51,23 +51,23 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
       console.log("current user", currentUser);
 
-      // this req will asign the logged in user a jwt token
-      // if (currentUser) {
-      //   axios
-      //     .post("https://b7a12-summer-camp-server-side-omega.vercel.app/jwt", {
-      //       email: currentUser.email,
-      //     })
-      //     .then((data) => {
-      //       console.log("axios", data.data.jwtToken);
-      //       const accessToken = data.data.jwtToken;
-      //       localStorage.setItem("AccessToken", accessToken);
-      //       setLoading(false);
-      //     });
-      // } else {
-      //   localStorage.removeItem("AccessToken");
-      //   setLoading(false);
-      // }
-      // setLoading(false);
+      this req will asign the logged in user a jwt token
+      if (currentUser) {
+        axios
+          .post("https://b7a12-summer-camp-server-side-omega.vercel.app/jwt", {
+            email: currentUser.email,
+          })
+          .then((data) => {
+            console.log("axios", data.data.jwtToken);
+            const accessToken = data.data.jwtToken;
+            localStorage.setItem("AccessToken", accessToken);
+            setLoading(false);
+          });
+      } else {
+        localStorage.removeItem("AccessToken");
+        setLoading(false);
+      }
+      setLoading(false);
     });
     return () => {
       return unsubscribe();

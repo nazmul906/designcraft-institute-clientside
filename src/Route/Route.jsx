@@ -10,6 +10,7 @@ import AllUser from "../pages/Dashboard/Admin/AllUser";
 import ManageClass from "../pages/Dashboard/Admin/ManageClass";
 import AddClass from "../pages/Dashboard/Instructor/AddClass";
 import MyClass from "../pages/Dashboard/Instructor/MyClass";
+import ApprovedClass from "../pages/shared/ApprovedClass/ApprovedClass";
 
 const Route = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ const Route = createBrowserRouter([
         path: "register",
         element: <Register></Register>,
       },
+      { path: "approvedclass", element: <ApprovedClass></ApprovedClass> },
     ],
   },
   {
