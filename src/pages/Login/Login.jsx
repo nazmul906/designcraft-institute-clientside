@@ -28,12 +28,12 @@ const Login = () => {
   const handleSignInGoogle = () => {
     googleSignIn().then((result) => {
       const loggedUser = result.user;
-      console.log(loggedUser);
+      // console.log(loggedUser);
       const registered = {
         name: loggedUser.displayName,
         email: loggedUser.email,
       };
-      fetch("https://b7a12-summer-camp-server-side-omega.vercel.app/users", {
+      fetch("http://localhost:5000/users", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -136,15 +136,3 @@ const Login = () => {
 };
 
 export default Login;
-
-/*    <div className="flex items-center justify-between mb-6">
-              <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="submit"
-              >
-                Sign In
-              </button>
-              <a className="text-blue-500 hover:text-blue-800" href="/register">
-                Create an Account
-              </a>
-            </div> */

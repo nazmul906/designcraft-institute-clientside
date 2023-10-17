@@ -13,6 +13,8 @@ import {
 } from "firebase/auth";
 
 import app from "../pages/firebase/firebase.config";
+import axios from "axios";
+
 // import axios from "axios";
 const auth = getAuth(app);
 export const AuthContext = createContext(null);
@@ -46,15 +48,16 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       console.log("current user", currentUser);
 
-      this req will asign the logged in user a jwt token
+      // this req will asign the logged in user a jwt token
       if (currentUser) {
         axios
-          .post("https://b7a12-summer-camp-server-side-omega.vercel.app/jwt", {
+          .post("http://localhost:5000/jwt", {
             email: currentUser.email,
           })
           .then((data) => {
