@@ -28,17 +28,14 @@ const AllUser = () => {
 
   const handleAdmin = (item) => {
     // console.log(item);
-    fetch(
-      `https://b7a12-summer-camp-server-side-omega.vercel.app/users/admin/${item._id}`,
-      {
-        method: "PATCH",
-      }
-    )
+    fetch(`http://localhost:5000/users/admin/${item._id}`, {
+      method: "PATCH",
+    })
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
         if (data.modifiedCount) {
-          refetch;
+          // refetch;
           alert("admin role is updated");
         }
       });
