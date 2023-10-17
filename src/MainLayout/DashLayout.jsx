@@ -10,8 +10,8 @@ const DashLayout = () => {
   // const [isAdmin] = useAdmin();
   // const [isInstructor] = useInstructor();
   // const [isStudent, setIsStudent] = useState(false);
-  const isAdmin = true;
-  const isInstructor = false;
+  const isAdmin = false;
+  const isInstructor = true;
   const isStudent = false;
 
   useEffect(() => {
