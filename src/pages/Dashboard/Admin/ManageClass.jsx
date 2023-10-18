@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 // import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import "./manageclass.css";
 import Swal from "sweetalert2";
 
 const ManageClass = () => {
   const [allclass, setAllclass] = useState([]);
-  // const [axiosSecure] = useAxiosSecure();
+  const [axiosSecure] = useAxiosSecure();
   const [feedbackModalOpen, setFeedbackModalOpen] = useState(false);
   const [feedbackItemId, setFeedbackItemId] = useState(null);
   const [feedback, setFeedback] = useState("");
@@ -55,16 +56,17 @@ const ManageClass = () => {
   };
 
   const handleFeedback = () => {
-    console.log("Feedback:", feedback);
-    console.log("Item ID:", feedbackItemId);
+    // console.log("Feedback:", feedback);
+    // console.log("Item ID:", feedbackItemId);
 
     // Send the feedback and item ID to the backend using a PUT request
     axiosSecure
       .put(`/myclass/feedback/${feedbackItemId}`, { feedback })
       .then((res) => {
         // Handle the response as needed
-        console.log(res.data);
-        alert("feedback is send");
+        // console.log(res.data);
+
+        Swal.fire("feedback is send");
         // Reset the feedback and close the modal
         const updatedAllClass = allclass.map((item) => {
           if (item._id === feedbackItemId) {
