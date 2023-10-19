@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NewEvent() {
   return (
-    <div className="bg-[#181E5D] text-white p-6">
+    <div className="bg-[#252B68] text-white p-6">
       <div>
         <h1 className="text-center font-semibold text-[2.5rem] mt-5 mb-4">
           Upcoming Events

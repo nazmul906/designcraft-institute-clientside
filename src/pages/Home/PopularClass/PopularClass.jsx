@@ -61,7 +61,11 @@ const PopularClass = () => {
                 <h2 className="card-title text-white">{cls.className}</h2>
                 <p className="text-white">{cls.description}</p>
                 <div className="card-actions justify-end pb-3 pr-5">
-                  <button className="btn btn-primary">Buy Now</button>
+                  <div className="text-center">
+                    <button className="text-center bg-[#D9930D] hover:bg-[#95709A] text-white font-bold py-2 px-4 rounded">
+                      Describe more
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

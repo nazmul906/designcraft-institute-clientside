@@ -6,6 +6,7 @@ import AboutUs from "../AboutUs/AboutUs";
 import FeaturedCourse from "../FeaturedCourse/FeaturedCourse";
 import NewEvent from "../NewEvent/NewEvent";
 import Certificate from "../Certificate/Certificate";
+import LatestNews from "../LatestNews/LatestNews";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <FeaturedCourse></FeaturedCourse>
       <NewEvent></NewEvent>
       <Certificate></Certificate>
+      <LatestNews></LatestNews>
     </div>
   );
 };

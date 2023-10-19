@@ -90,8 +90,10 @@ const Navbar = () => {
             </button>
           </>
         ) : (
-          <Link to="/login" className="btn btn-primary">
-            Login
+          <Link to="/login">
+            <button className="bg-[#D9930D] hover:bg-[#95709A] text-white font-bold py-2 px-4 rounded  bg-[#5D69E5]">
+              Login
+            </button>
           </Link>
         )}
       </div>

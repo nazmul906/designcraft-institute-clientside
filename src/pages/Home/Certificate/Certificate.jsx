@@ -3,7 +3,7 @@ import "./Certificate.css";
 
 const Certificate = () => {
   return (
-    <div className="flex bg-[#191F5E]  text-white p-10">
+    <div className="flex bg-[#181E5D]  text-white p-10">
       <div className="flex-1">
         <img
           //   className="certificate-image "

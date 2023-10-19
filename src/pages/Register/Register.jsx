@@ -143,7 +143,7 @@ const Register = () => {
               Sign In
             </button> */}
             <input
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="bg-[#D9930D] hover:bg-[#95709A] text-white font-bold py-2 px-4 rounded"
               type="submit"
               value="submit"
             />
