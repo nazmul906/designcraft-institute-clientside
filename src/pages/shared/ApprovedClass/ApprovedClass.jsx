@@ -13,6 +13,7 @@ const ApprovedClass = () => {
 
   return (
     <div className="grid gap-4 grid-cols-2">
+      <h1>{allclass.length}</h1>
       {allclass.map((item) => (
         // <AllClassCard key={item.id} allclass={item}></AllClassCard>
         <ApprovedClassCard key={item._id} allclass={item}></ApprovedClassCard>

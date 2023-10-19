@@ -1,19 +1,19 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
-// import useAdmin from "../../hooks/useAdmin";
-// import useInstructor from "../../hooks/useInstructor";
+import useAdmin from "../../../hooks/useAdmin";
+import useInstructor from "../../../hooks/useInstructor";
 
 const ApprovedClassCard = ({ allclass }) => {
   const [isAdmin] = useAdmin();
-  //   const [isInstructor] = useInstructor();
+  const [isInstructor] = useInstructor();
 
   const [button, setButton] = useState(false);
   const { _id, className, instructorName, price, availableSeats } = allclass;
-  // console.log(allclass);
+  console.log(allclass);
   const { user } = useContext(AuthContext);
   const handleSelectClass = (_id) => {
-    // console.log("selected item", _id);
+    console.log("selected item", _id);
     // const selected = { user: user.email, selecteditem: item };
     // update as an array
     const enrollment = { enrollment: user?.email };
