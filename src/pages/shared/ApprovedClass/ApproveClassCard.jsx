@@ -5,7 +5,7 @@ import { AuthContext } from "../../../providers/AuthProvider";
 // import useInstructor from "../../hooks/useInstructor";
 
 const ApprovedClassCard = ({ allclass }) => {
-  //   const [isAdmin] = useAdmin();
+  const [isAdmin] = useAdmin();
   //   const [isInstructor] = useInstructor();
 
   const [button, setButton] = useState(false);

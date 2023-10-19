@@ -10,4 +10,12 @@
   align-items: center;
   font-size: 80px;
   color: rgb(210, 216, 216);
+
+  /* Add a semi-transparent blue overlay */
+  background-color: rgba(
+    0,
+    0,
+    255,
+    0.5
+  ); /* Adjust the alpha (0.5) for transparency */
 }

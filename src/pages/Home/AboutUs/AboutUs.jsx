@@ -12,7 +12,7 @@ const AboutUs = () => {
         ></img>
       </div>
       <div className="flex-1 text-white ml-12">
-        <p className="bg-[#252C74] text-white mb-4 text-xl">About us</p>
+        <p className="bg-[#252C74] text-white mb-4 text-xl ml-4">About us</p>
         <h1 className="text-5xl mb-4">Creating a Lifelong Best Community</h1>
         <p className="mb-4 font-serif">
           It uses a dictionary of over 200 Latin words, combined with a handful
@@ -20,28 +20,33 @@ const AboutUs = () => {
         </p>
         <div className="flex flex-col">
           <div
-            className="flex p-4 space-x-4 items-center "
+            className="flex  items-center  "
             style={{
               border: "2px solid #703224 rounded",
               borderRadius: "10px",
+              marginBottom: "30px",
             }}
           >
             {" "}
-            <AiFillContainer style={{ height: "70px", width: "50px" }} />
+            <AiFillContainer
+              style={{ height: "70px", width: "50px", paddingRight: "10px" }}
+            />
             <div className="ml-4 ">
               <h1 className="text-xl">Flexiable Classes</h1>
-              <p>
+              <p className="font-serif  mt-3">
                 The generated Lorem Ipsum is therefore always free from
                 repetition, injected humour, or non-characteristic words etc.
               </p>
             </div>
           </div>
-          <div className="flex p-4  ">
+          <div className="flex ">
             {" "}
-            <AiOutlineHighlight />
+            <AiOutlineHighlight
+              style={{ height: "70px", width: "50px", paddingRight: "10px" }}
+            />
             <div className="ml-4">
               <h1 className="text-xl">Live Class From anywhere</h1>
-              <p>
+              <p className="font-serif mt-3 ">
                 The generated Lorem Ipsum is therefore always free from
                 repetition, injected humour, or non-characteristic words etc.
               </p>
