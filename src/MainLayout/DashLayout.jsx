@@ -5,16 +5,19 @@ import { FaHome, FaWallet } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import "./dashboard.css";
 import useAdmin from "../hooks/useAdmin";
+import useInstructor from "../hooks/useInstructor";
 
 const DashLayout = () => {
   const [isAdmin] = useAdmin();
-  // const [isInstructor] = useInstructor();
+  const [isInstructor] = useInstructor();
   // const [isStudent, setIsStudent] = useState(false);
   // const isAdmin = true;
   // const isAdmin = false;
 
   // const isInstructor = true;
-  const isInstructor = false;
+  // const isInstructor = false;
+  console.log("instructot", isInstructor);
+  console.log("admin", isAdmin);
   const isStudent = false;
 
   useEffect(() => {
