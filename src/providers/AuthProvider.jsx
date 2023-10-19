@@ -61,7 +61,7 @@ const AuthProvider = ({ children }) => {
             email: currentUser.email,
           })
           .then((data) => {
-            console.log("axios", data.data.jwtToken);
+            // console.log("axios", data.data.jwtToken);
             const accessToken = data.data.jwtToken;
             localStorage.setItem("AccessToken", accessToken);
             setLoading(false);

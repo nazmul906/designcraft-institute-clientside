@@ -26,7 +26,7 @@ const ManageClass = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.matchedCount) {
           // alert("approved request");
           Swal.fire("approved request");

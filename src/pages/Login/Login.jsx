@@ -20,9 +20,8 @@ const Login = () => {
       .then((result) => {
         const loggedinUser = result.user;
         console.log(loggedinUser);
-        navigate(from, { replace: true });
       })
-      .then((error) => console.log(error.message));
+      .catch((error) => console.log(error.message));
   };
 
   const handleSignInGoogle = () => {
@@ -109,7 +108,7 @@ const Login = () => {
                 disabled={false}
                 type="submit"
                 value="login"
-                className="btn btn-primary"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               ></input>
             </div>
           </form>

@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import Swal from "sweetalert2";
 // todo: login and register page should be react form
 // and password validate
 const Register = () => {
@@ -57,7 +58,8 @@ const Register = () => {
               .then((data) => {
                 // console.log(data);
                 if (data.insertedId) {
-                  alert("user is registered");
+                  Swal("user successfully signup");
+                  fromJSON.reset();
                 }
               });
           })

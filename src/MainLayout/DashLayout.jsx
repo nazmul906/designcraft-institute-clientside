@@ -1,17 +1,18 @@
 import React from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { FaHome, FaWallet } from "react-icons/fa";
-// import useAdmin from "../hooks/useAdmin";
-// import useInstructor from "../hooks/useInstructor";
+
 import { useState, useEffect } from "react";
 import "./dashboard.css";
+import useAdmin from "../hooks/useAdmin";
 
 const DashLayout = () => {
-  // const [isAdmin] = useAdmin();
+  const [isAdmin] = useAdmin();
   // const [isInstructor] = useInstructor();
   // const [isStudent, setIsStudent] = useState(false);
-  const isAdmin = true;
+  // const isAdmin = true;
   // const isAdmin = false;
+
   // const isInstructor = true;
   const isInstructor = false;
   const isStudent = false;

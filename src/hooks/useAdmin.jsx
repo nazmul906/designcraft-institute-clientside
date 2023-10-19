@@ -1,5 +1,3 @@
-// ei hooks diye kno user admin kina check krbo
-// sei check ta hbe login in er email diye//jeta useAuth () theke anbo
 import { async } from "@firebase/util";
 // it return the rule
 
@@ -20,7 +18,7 @@ const useAdmin = () => {
       !isLoading && !!user?.email && !!localStorage.getItem("AccessToken"),
     queryFn: async () => {
       const res = await axiosSecure(`/users/admin/${user?.email}`);
-      // console.log("is admin response ", res);
+      console.log("is admin response ", res);
       // to check returned data admin or not ,return the role res.data.admin
       // if true dashboard will get isAdmin = true and enable his layout
       return res.data.admin;
