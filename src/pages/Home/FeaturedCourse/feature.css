@@ -1,0 +1,10 @@
+.bg-img {
+  background-image: url("https://i.ibb.co/RBWVBTL/retro-pattern-background-trending-cyberpunk-background-80s-party-background-lines-pattern-gradient-c.jpg");
+  background-size: cover;
+  background-position: center;
+  /* height: 350px; */
+}
+
+.text-title {
+  font-family: "Shrikhand", cursive; /* Use the 'Shrikhand' font */
+}

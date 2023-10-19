@@ -11,6 +11,7 @@ import ManageClass from "../pages/Dashboard/Admin/ManageClass";
 import AddClass from "../pages/Dashboard/Instructor/AddClass";
 import MyClass from "../pages/Dashboard/Instructor/MyClass";
 import ApprovedClass from "../pages/shared/ApprovedClass/ApprovedClass";
+import Instructors from "../pages/shared/Instructors/Instructors";
 
 const Route = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const Route = createBrowserRouter([
       {
         path: "register",
         element: <Register></Register>,
+      },
+      {
+        path: "isntructor",
+        element: <Instructors></Instructors>,
       },
       { path: "approvedclass", element: <ApprovedClass></ApprovedClass> },
     ],

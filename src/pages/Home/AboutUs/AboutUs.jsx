@@ -54,8 +54,8 @@ const AboutUs = () => {
           </div>
 
           <div className="mt-6">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded  bg-[#5D69E5]">
-              Discover more
+            <button className="bg-[#D9930D] hover:bg-[#95709A] text-white font-bold py-2 px-4 rounded  bg-[#5D69E5]">
+              Describe more
             </button>
           </div>
         </div>

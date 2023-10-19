@@ -115,7 +115,7 @@ const Login = () => {
           <div className="mt-3">
             <button
               onClick={handleSignInGoogle}
-              className="btn btn-primary bg-blue-600 hover:bg-blue-700"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             >
               Google
             </button>
@@ -125,7 +125,9 @@ const Login = () => {
               <sm>yet not registered?..please sign up</sm>
             </p>{" "}
             <Link to="/register">
-              <button className="btn btn-primary">Register</button>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Register
+              </button>
             </Link>
           </div>
         </div>
